@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portal de Vacinação - Juiz de Fora</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portal de Vacinação</h1>
+        <p>Juiz de Fora - MG</p>
+    </header>
+
+    <main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+
+        <section class="card" id="informacoes-locais" onclick="openModal(event, 'informacoes-locais')">
+            <h2>Informações Locais</h2>
+            <!-- informação oculta -->
+            <div class="hidden-content">
+                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
+                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste4.</li>
+            </div>
+            <!-- informação oculta -->
+            <p>Encontre os principais postos de vacinação e campanhas em Juiz de Fora.</p>
+            <ul>
+                <li><strong>Posto Central de Vacinação:</strong> Endereço, horário de funcionamento.</li>
+                <li><strong>Clique para ver mais locais</strong> </li>
+                <!-- Adicione mais postos de vacinação -->
+            </ul>
+        </section>
+
+        <section class="card" id="calendario" onclick="openModal(event, 'calendario')">
+            <h2>Calendário de Vacinação</h2>
+            <!-- informação oculta -->
+            <div class="hidden-content">
+                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
+                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste4.</li>
+            </div>
+            <!-- informação oculta -->
+            <p>Confira o calendário de vacinação atualizado para Juiz de Fora.</p>
+            <ul>
+                <li><strong>Vacinação contra a gripe:</strong> datas, locais.</li>
+                <li><strong>Campanha contra o sarampo:</strong> datas, locais.</li>
+                <!-- Adicione mais informações sobre o calendário -->
+            </ul>
+        </section>
+
+        <section class="card" id="campanhas" onclick="openModal(event, 'campanhas')">
+            <h2>Campanhas em Andamento</h2>
+            <!-- informação oculta -->
+            <div class="hidden-content">
+                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
+                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste4.</li>
+            </div>
+            <!-- informação oculta -->
+            <p>Participe das campanhas de vacinação em Juiz de Fora.</p>
+            <ul>
+                <li><strong>Campanha de Vacinação contra a COVID-19:</strong> Saiba como participar.</li>
+                <li><strong>Campanha de Atualização de Cartão de Vacina:</strong> Incentivos e benefícios.</li>
+                <!-- Adicione mais informações sobre campanhas -->
+            </ul>
+        </section>
+
+        <section class="card" id="mitos-vacinas" onclick="openModal(event, 'mitos-vacinas')">
+            <h2>Mitos sobre Vacinas</h2>
+            <!-- informação oculta -->
+            <div class="hidden-content">
+                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
+                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste4.</li>
+            </div>
+            <!-- informação oculta -->
+            <p>Desmistifique informações incorretas sobre vacinas.</p>
+            <ul>
+                <li><strong>Mito:</strong> "Vacinas causam autismo."</li>
+                <li><strong>Mito:</strong> "É melhor pegar a doença do que se vacinar."</li>
+                <!-- Adicione mais mitos comuns -->
+            </ul>
+        </section>
+
+        <section class="card" id="organizacoes-apoio" onclick="openModal(event, 'organizacoes-apoio-vacinas')">
+            <h2>Organizações de Apoio</h2>
+            <!-- informação oculta -->
+            <div class="hidden-content">
+                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
+                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
+                <li><strong>Posto de Saúde do Bairro A:</strong> teste4.</li>
+            </div>
+            <!-- informação oculta -->
+            <p>Encontre suporte e informações adicionais nas esferas municipal, estadual e federal.</p>
+            <ul>
+                <li><strong>Municipal:</strong> <a href="link_municipal">Secretaria Municipal de Saúde de Juiz de
+                        Fora</a></li>
+                <li><strong>Estadual:</strong> <a href="link_estadual">Secretaria Estadual de Saúde de Minas
+                        Gerais</a></li>
+                <li><strong>Federal:</strong> <a href="link_federal">Ministério da Saúde - Brasil</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Portal de Vacinação - Juiz de Fora</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Coloque aqui a lógica para inicialização ou chamadas de função adicionais, se necessário.
+        });
+    </script>
+
+    <script src="main.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
