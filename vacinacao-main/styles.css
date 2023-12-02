@@ -5,11 +5,13 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: #f1efef;
+    background-color:#0C2D48 
+
+    ;
 }
 
 header {
-    background-color: #3498db;
+    background-color: #145DA0;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -25,7 +27,7 @@ main {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #B1D4E0 ;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
