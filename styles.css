@@ -89,8 +89,8 @@ footer {
     transform: translate(-50%, -50%);
     padding: 1000px;
     background-color: #ffffff00;
-    width: 70%;
-    height:90% ;
+    width: 99%;
+    height:99% ;
     max-width: 800px;
     overflow-y: auto;
 }
@@ -109,4 +109,15 @@ footer {
 }
 .hidden-content {
     display: none;
+}
+.close {
+    font-size: 50px; /* Altere o tamanho conforme necessário */
+    line-height:-5;
+    color: #fff;
+}
+.card:hover {
+    transform: scale(1.05); /* Ajuste conforme necessário para a escala desejada */
+}
+.card {
+    transition: transform 0.3s;
 }
