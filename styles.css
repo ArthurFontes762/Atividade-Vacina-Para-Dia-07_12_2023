@@ -31,6 +31,13 @@ main {
     padding: 20px;
     cursor: pointer;
 }
+.card-outra-aba {
+    background-color: #0d3b61;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer;
+}
 
 .hidden-content {
     color: #ffffff;
@@ -39,8 +46,15 @@ main {
 .card h2 {
     color: #3498db;
 }
+.card-outra-aba  h2 {
+    color: #3498db;
+}
 
 .card p {
+    color: #999999;
+    margin-bottom: 15px;
+}
+.card-outra-aba p {
     color: #999999;
     margin-bottom: 15px;
 }
@@ -49,8 +63,15 @@ main {
     list-style-type: none;
     padding: 0;
 }
-
+.card-outra-aba ul {
+    list-style-type: none;
+    padding: 0;
+}
 .card ul li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+.card-outra-aba ul li {
     margin-bottom: 10px;
     color: #fff;
 }

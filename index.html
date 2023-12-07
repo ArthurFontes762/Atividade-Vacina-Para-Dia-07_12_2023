@@ -6,13 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sobre Vacina - Juiz de Fora</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var linkCards = document.querySelectorAll('.card-outra-aba');
+
+            linkCards.forEach(function (card) {
+                card.addEventListener('click', function () {
+
+                    var link = card.querySelector('a');
+
+                    if (link) {
+                        window.open(link.href, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
 
     <header>
-            <img src="IMAGENS\sv.gif" alt="Logo em GIF"width="300" height="200">
-            <p>Juiz de Fora - MG</p>
+        <img src="IMAGENS\sv.gif" alt="Logo em GIF" width="300" height="200">
+        <p>Juiz de Fora - MG</p>
     </header>
 
     <main>
@@ -158,21 +175,15 @@
 
 
 
-        <section class="card" id="cometarios" onclick="openModal(event, 'organizacoes-apoio-vacinas')">
+        <section class="card-outra-aba" id="cometarios">
             <h2>Campo de Comentários</h2>
-            <!-- informação oculta -->
-            <!-- <div class="hidden-content">
-                <li><strong>Posto Central de Vacinação:</strong> teste1.</li>
-                <li><strong>Posto de Saúde do Bairro A:</strong> teste2.</li>
-                <li><strong>Posto Central de Vacinação:</strong> teste3.</li>
-                <li><strong>vou melhorarara isso estou sem banco de dados</strong> teste4.</li>
-            </div> -->
-            <!-- informação oculta -->
-            <p>Veja a opinião dos usuários!</p>
+
+            <p><a href="https://saude.abril.com.br/medicina/16-mitos-e-verdades-sobre-as-vacinas">Veja a opinião dos
+                    usuários!</p>
             <ul>
-                <li><strong>Anônimo: </strong>Site bacana, mesmo sendo simples!</li>
                 <li><strong>Antonieta Silveira da Silva: </strong>Graças ao site, eu sei onde tem mais UBS!</li>
                 <li><strong>Irineu Harvard: </strong>Informação é o que não falta!</li>
+                <li><strong>Anônimo: </strong>te bacana,mesmo sendo simples!</li>
 
             </ul>
         </section>
