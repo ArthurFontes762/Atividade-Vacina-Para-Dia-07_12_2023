@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylescoment.css">
+    <title>Sobre Vacina - Juiz de Fora</title>
+</head>
+
+<body>
+
+    <header>
+            <img src="IMAGENS\sv.gif" alt="Logo em GIF"width="300" height="200">
+            <p>Juiz de Fora - MG</p>
+    </header>
+
+    <main>
+        <section class="card" id="comentarios" onclick="openModal(event, 'organizacoes-apoio-vacinas')">
+            <h2>Campo de Comentários</h2>
+            <p>Veja a opinião dos usuários!</p>
+            <ul>
+                <li><strong>Anônimo: </strong>Site bacana, mesmo sendo simples!</li>
+                <li><strong>Antonieta Silveira da Silva: </strong>Graças ao site, eu sei onde tem mais UBS!</li>
+                <li><strong>Irineu Harvard: </strong>Informação é o que não falta!</li>
+        
+            </ul>
+        </section>
+        <section class="card-form" id="campocoment" onclick="openModal(event, 'organizacoes-apoio-vacinas')">
+            <h2>Deixe sua opinião abaixo!</h2>
+            <p>Preencha corretamente seus dados.</p>
+            <form action="/processar-contato" method="get">
+        
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome e Sobrenome" required>
+                <br>
+                <br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Opcional">
+                <br>
+                <br>
+
+                <label for="mensagem">Comente aqui:</label>
+                <br>
+        
+                <label for="mensagem-texto"></label>
+                <textarea id="mensagem-texto" name="mensagem-texto" rows="5" placeholder="Deixe aqui sua mensagem." required></textarea>
+                <br>
+                <br>
+        
+                <input type="submit" value="Enviar">
+                <br>
+                <br>
+        
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Portal de Vacinação - Juiz de Fora</p>
+        <div class="rodape-cards-container">
+            <section class="card-rodape" id="organizacoes-apoio">
+                <h2>Organizações de Apoio</h2>
+                <p>Encontre suporte e informações adicionais nas esferas municipal, estadual e federal.</p>
+                <ul>
+                    <li><strong>Municipal:</strong> <a
+                            href="https://www.pjf.mg.gov.br/secretarias/ss/index.php">Secretaria Municipal de Saúde de
+                            Juiz de
+                            Fora</a></li>
+                    <li><strong>Estadual:</strong> <a href="https://www.saude.mg.gov.br/s">Secretaria Estadual de Saúde
+                            de Minas
+                            Gerais</a></li>
+                    <li><strong>Federal:</strong> <a href="https://www.gov.br/saude/pt-br">Ministério da Saúde -
+                            Brasil</a></li>
+                </ul>
+            </section>
+            <section class="card-rodape" id="fontes">
+                <h2>Fontes</h2>
+                <p>Fontes de todos os contéudos ditos aqui</p>
+                <ul>
+                    <li><strong>Mitos:</strong> <a
+                            href="https://saude.abril.com.br/medicina/16-mitos-e-verdades-sobre-as-vacinas">mitos sobre
+                            as vacinas</a></li>
+                    <li><strong>UBS:</strong> <a
+                            href="https://www.google.com.br/maps/search/ubs+juiz+de+fora/@-21.7572351,-43.415208,12z?entry=ttu">locais
+                            postos de saude</a></li>
+                    <li><strong>Campanhas:</strong> <a href="https://pjf.mg.gov.br/vacina-para-todos-jf/">JF</a></li>
+                    <li><strong>Campanhas:</strong> <a
+                            href="https://www.gov.br/saude/pt-br/composicao/seidigi/demas/campanhas-de-vacinacao">Nacional</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <p><strong>Criado por: </strong>Kayky J.C.M., Arthur Fontes, Arthur Silva, Guilherme Guerra e Juan De Castro</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Coloque aqui a lógica para inicialização ou chamadas de função adicionais, se necessário.
+        });
+    </script>
+
+    <script src="main.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
